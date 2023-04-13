@@ -1,0 +1,134 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+.v-flex{
+    display: flex;
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.jcc{justify-content: center !important;}
+.jcb{justify-content: space-between !important;}
+.jcb{justify-content: flex-start;}
+
+.aic{align-items: center;}
+.ais{align-items: flex-start;}
+.aib{align-items: baseline !important;}
+
+.img-fit{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.t0{top: 0;}
+.b0{bottom: 0;}
+.r0{right: 0;}
+.l0{left: 0;}
+*{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+*::placeholder{
+    font-size: 0.8rem;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1111px !important;
+}
+
+
+
+
+/* sidebar */
+.home .sideBar{
+    height: 100%;
+    border-right: 1px dashed rgb(208, 208, 208);
+    overflow-y: auto;
+}
+.home .sideBar *{
+    text-align: center;
+}
+.home .sideBar>div{
+    min-height: 100%;
+}
+.home .sideBar>div>aside a{
+    margin: 1rem;
+}
+
+
+
+
+/* main */
+.home .main{
+    padding: 0 0.5rem 0 0.5rem;
+    overflow-y: auto;
+    height: 100vh;
+}
+.home .mainHeader{
+    height: 50px;
+}
+.mainHeader input{
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0.3rem;
+}
+.mainHeader .searchBar{
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 7px;
+    overflow: hidden;
+    padding: 0 0 0 0.3rem;
+}
+
+.home .mainBanner{
+    height: 250px;
+    margin-bottom: 1rem;
+}
+.home .mainBanner>section{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.6rem;
+}
+
+
+
+
+/* popularNow */
+.home .popularNow{
+    overflow-x: auto;
+    width: 100%;
+}
+.home .popularNow>aside{
+    width: fit-content;
+}
+.home .popularNow>aside .p-book{
+    width: 130px;
+    margin: 0 1.5rem 0 0;
+    font-size: 0.8rem;
+}
+
+
+
+/* Categories */
+.home .category .cate-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.cate-container aside{
+    margin: 0.5rem;
+    font-size: 0.8rem;
+}
